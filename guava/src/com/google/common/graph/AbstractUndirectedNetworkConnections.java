@@ -19,6 +19,7 @@ package com.google.common.graph;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 
+import com.google.common.annotations.GwtCompatible;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
@@ -30,6 +31,7 @@ import java.util.Set;
  * @param <N> Node parameter type
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 abstract class AbstractUndirectedNetworkConnections<N, E> implements NetworkConnections<N, E> {
   /** Keys are edges incident to the origin node, values are the node at the other end. */
   protected final Map<E, N> incidentEdgeMap;

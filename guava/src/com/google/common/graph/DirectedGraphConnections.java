@@ -23,6 +23,7 @@ import static com.google.common.graph.GraphConstants.INNER_LOAD_FACTOR;
 import static com.google.common.graph.Graphs.checkNonNegative;
 import static com.google.common.graph.Graphs.checkPositive;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.AbstractIterator;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.UnmodifiableIterator;
@@ -42,6 +43,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @param <N> Node parameter type
  * @param <V> Value parameter type
  */
+@GwtCompatible
 final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
   /**
    * A wrapper class to indicate a node is both a predecessor and successor while still providing

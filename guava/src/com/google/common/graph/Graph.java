@@ -17,6 +17,7 @@
 package com.google.common.graph;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 import java.util.Set;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
@@ -100,6 +101,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @since 20.0
  */
 @Beta
+@GwtCompatible
 public interface Graph<N> extends BaseGraph<N> {
   //
   // Graph-level accessors

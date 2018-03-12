@@ -18,6 +18,7 @@ package com.google.common.graph;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.UnmodifiableIterator;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
 import java.util.AbstractSet;
@@ -41,6 +42,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  *
  * @author James Sexton
  */
+@GwtCompatible
 class MapIteratorCache<K, V> {
   private final Map<K, V> backingMap;
 

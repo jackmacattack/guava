@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import java.util.Map;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
@@ -25,6 +26,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  *
  * @author James Sexton
  */
+@GwtCompatible
 class MapRetrievalCache<K, V> extends MapIteratorCache<K, V> {
   @NullableDecl private transient CacheEntry<K, V> cacheEntry1;
   @NullableDecl private transient CacheEntry<K, V> cacheEntry2;

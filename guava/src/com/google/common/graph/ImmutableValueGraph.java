@@ -19,6 +19,7 @@ package com.google.common.graph;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.base.Function;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
@@ -39,6 +40,7 @@ import com.google.errorprone.annotations.Immutable;
  * @since 20.0
  */
 @Beta
+@GwtCompatible
 @Immutable(containerOf = {"N", "V"})
 @SuppressWarnings("Immutable") // Extends ConfigurableValueGraph but uses ImmutableMaps.
 public final class ImmutableValueGraph<N, V> extends ConfigurableValueGraph<N, V> {

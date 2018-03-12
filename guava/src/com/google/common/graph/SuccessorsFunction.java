@@ -17,6 +17,7 @@
 package com.google.common.graph;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 
 /**
  * A functional interface for <a
@@ -78,6 +79,7 @@ import com.google.common.annotations.Beta;
  * @since 23.0
  */
 @Beta
+@GwtCompatible
 public interface SuccessorsFunction<N> {
 
   /**

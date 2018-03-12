@@ -20,6 +20,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.graph.GraphConstants.DEFAULT_NODE_COUNT;
 import static com.google.common.graph.Graphs.checkNonNegative;
 
+import com.google.common.annotations.GwtCompatible;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -42,6 +43,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @param <N> Node parameter type
  * @param <V> Value parameter type
  */
+@GwtCompatible
 class ConfigurableValueGraph<N, V> extends AbstractValueGraph<N, V> {
   private final boolean isDirected;
   private final boolean allowsSelfLoops;

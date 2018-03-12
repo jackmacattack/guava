@@ -16,7 +16,10 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
+
 /** A utility class to hold various constants used by the Guava Graph library. */
+@GwtCompatible
 final class GraphConstants {
 
   private GraphConstants() {}

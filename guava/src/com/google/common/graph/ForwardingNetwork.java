@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import java.util.Optional;
 import java.util.Set;
 
@@ -26,6 +27,7 @@ import java.util.Set;
  * @author James Sexton
  * @author Joshua O'Madadhain
  */
+@GwtCompatible
 abstract class ForwardingNetwork<N, E> extends AbstractNetwork<N, E> {
 
   protected abstract Network<N, E> delegate();

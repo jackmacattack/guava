@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import java.util.Optional;
 import java.util.Set;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
@@ -27,6 +28,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @author James Sexton
  * @author Joshua O'Madadhain
  */
+@GwtCompatible
 abstract class ForwardingValueGraph<N, V> extends AbstractValueGraph<N, V> {
 
   protected abstract ValueGraph<N, V> delegate();

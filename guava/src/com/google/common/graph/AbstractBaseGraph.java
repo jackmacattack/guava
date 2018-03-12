@@ -20,6 +20,7 @@ import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.base.Function;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterators;
@@ -40,6 +41,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @author James Sexton
  * @param <N> Node parameter type
  */
+@GwtCompatible
 abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
 
   /**

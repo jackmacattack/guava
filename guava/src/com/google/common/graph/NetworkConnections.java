@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
 import java.util.Set;
 
@@ -27,6 +28,7 @@ import java.util.Set;
  * @param <N> Node parameter type
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 interface NetworkConnections<N, E> {
 
   Set<N> adjacentNodes();

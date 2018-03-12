@@ -20,6 +20,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.graph.Graphs.checkNonNegative;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.base.Optional;
 
 /**
@@ -47,6 +48,7 @@ import com.google.common.base.Optional;
  * @since 20.0
  */
 @Beta
+@GwtCompatible
 public final class ValueGraphBuilder<N, V> extends AbstractGraphBuilder<N> {
 
   /** Creates a new instance with the specified edge directionality. */

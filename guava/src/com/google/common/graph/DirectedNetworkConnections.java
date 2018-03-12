@@ -18,6 +18,7 @@ package com.google.common.graph;
 
 import static com.google.common.graph.GraphConstants.EXPECTED_DEGREE;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.ImmutableBiMap;
@@ -32,6 +33,7 @@ import java.util.Set;
  * @param <N> Node parameter type
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 final class DirectedNetworkConnections<N, E> extends AbstractDirectedNetworkConnections<N, E> {
 
   protected DirectedNetworkConnections(

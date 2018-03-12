@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
 import java.util.Set;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
@@ -28,6 +29,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @param <N> Node parameter type
  * @param <V> Value parameter type
  */
+@GwtCompatible
 interface GraphConnections<N, V> {
 
   Set<N> adjacentNodes();

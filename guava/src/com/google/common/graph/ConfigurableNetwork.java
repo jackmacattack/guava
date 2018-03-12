@@ -23,6 +23,7 @@ import static com.google.common.graph.GraphConstants.DEFAULT_NODE_COUNT;
 import static com.google.common.graph.GraphConstants.EDGE_NOT_IN_GRAPH;
 import static com.google.common.graph.GraphConstants.NODE_NOT_IN_GRAPH;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.ImmutableSet;
 import java.util.Map;
 import java.util.Set;
@@ -48,6 +49,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @param <N> Node parameter type
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 class ConfigurableNetwork<N, E> extends AbstractNetwork<N, E> {
   private final boolean isDirected;
   private final boolean allowsParallelEdges;

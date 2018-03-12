@@ -21,6 +21,7 @@ import static com.google.common.base.Preconditions.checkState;
 import static com.google.common.graph.Graphs.checkNonNegative;
 import static com.google.common.graph.Graphs.checkPositive;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Sets;
@@ -39,6 +40,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @param <N> Node parameter type
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 abstract class AbstractDirectedNetworkConnections<N, E> implements NetworkConnections<N, E> {
   /** Keys are edges incoming to the origin node, values are the source node. */
   protected final Map<E, N> inEdgeMap;

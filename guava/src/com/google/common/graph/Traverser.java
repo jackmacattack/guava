@@ -21,6 +21,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.collect.Iterators.singletonIterator;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.AbstractIterator;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.UnmodifiableIterator;
@@ -39,6 +40,7 @@ import java.util.Set;
  * @since 23.1
  */
 @Beta
+@GwtCompatible
 public abstract class Traverser<N> {
 
   /**

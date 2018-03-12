@@ -18,6 +18,7 @@ package com.google.common.graph;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.UnmodifiableIterator;
@@ -34,6 +35,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @author James Sexton
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 final class EdgesConnecting<E> extends AbstractSet<E> {
 
   private final Map<?, E> nodeToOutEdge;

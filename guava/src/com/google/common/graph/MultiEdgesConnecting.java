@@ -18,6 +18,7 @@ package com.google.common.graph;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.collect.AbstractIterator;
 import com.google.common.collect.UnmodifiableIterator;
 import java.util.AbstractSet;
@@ -35,6 +36,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @author James Sexton
  * @param <E> Edge parameter type
  */
+@GwtCompatible
 abstract class MultiEdgesConnecting<E> extends AbstractSet<E> {
 
   private final Map<E, ?> outEdgeToNode;

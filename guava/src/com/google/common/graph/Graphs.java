@@ -20,6 +20,7 @@ import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.graph.GraphConstants.NODE_NOT_IN_GRAPH;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.base.Objects;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Maps;
@@ -43,6 +44,7 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
  * @since 20.0
  */
 @Beta
+@GwtCompatible
 public final class Graphs {
 
   private Graphs() {}

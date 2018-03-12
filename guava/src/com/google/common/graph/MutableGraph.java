@@ -17,6 +17,7 @@
 package com.google.common.graph;
 
 import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
 
 /**
@@ -29,6 +30,7 @@ import com.google.errorprone.annotations.CanIgnoreReturnValue;
  * @since 20.0
  */
 @Beta
+@GwtCompatible
 public interface MutableGraph<N> extends Graph<N> {
 
   /**

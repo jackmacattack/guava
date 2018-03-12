@@ -23,6 +23,7 @@ import static com.google.common.graph.GraphConstants.SELF_LOOPS_NOT_ALLOWED;
 import static com.google.common.graph.Graphs.checkNonNegative;
 import static com.google.common.graph.Graphs.checkPositive;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
 
 /**
@@ -38,6 +39,7 @@ import com.google.errorprone.annotations.CanIgnoreReturnValue;
  * @param <N> Node parameter type
  * @param <V> Value parameter type
  */
+@GwtCompatible
 final class ConfigurableMutableValueGraph<N, V> extends ConfigurableValueGraph<N, V>
     implements MutableValueGraph<N, V> {
 

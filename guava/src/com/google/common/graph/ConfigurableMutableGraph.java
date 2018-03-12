@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import com.google.common.graph.GraphConstants.Presence;
 
 /**
@@ -28,6 +29,7 @@ import com.google.common.graph.GraphConstants.Presence;
  * @author James Sexton
  * @param <N> Node parameter type
  */
+@GwtCompatible
 final class ConfigurableMutableGraph<N> extends ForwardingGraph<N> implements MutableGraph<N> {
   private final MutableValueGraph<N, Presence> backingValueGraph;
 

@@ -16,6 +16,7 @@
 
 package com.google.common.graph;
 
+import com.google.common.annotations.GwtCompatible;
 import java.util.Set;
 
 /**
@@ -24,6 +25,7 @@ import java.util.Set;
  * @author James Sexton
  * @param <N> Node parameter type
  */
+@GwtCompatible
 interface BaseGraph<N> extends SuccessorsFunction<N>, PredecessorsFunction<N> {
   //
   // Graph-level accessors
